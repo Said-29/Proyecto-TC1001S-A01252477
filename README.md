@@ -1,2 +1,17 @@
-REPOSITORIO DE GIT PARA LA CLASE TC1001S
-ESTE REPOSITORIO PERTENECE A: JORDAN BARBA
+#REPOSITORIO DE GIT PARA LA CLASE TC1001S
+Repositorio para alojar los ejercicios, practica y tareas a realizar
+ en el curso de Herramientas Computacionales: El arte de la analitica,
+ en el Tec de Monterrey campus Sonora Norte.
+
+
+##Estudiante
+JORDAN SAID BARBA LOPEZ
+
+## MATRICULA
+A01252477
+
+## LISTADO DE EJERCICIOS
+* El programa prueba.c es un ejemplo para compilacion con el lenguaje c
+
+* El programa pruebapy.py es un ejemplo para compilacion con el lenguaje python.
+
