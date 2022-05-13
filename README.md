@@ -12,3 +12,13 @@ A01252477
 
 * El programa pruebapy.py es un ejemplo para compilacion con el lenguaje python.
 
+* Actividad 1 - Juego pintando
+
+* Actividad 2 - Juego serpiente
+
+* Actividad 3 - Juego pacman
+
+* Actividad 4 - Juego tiro parabolico
+
+* Actividad 5 - Juego de memoria
+
