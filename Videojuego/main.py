@@ -10,6 +10,7 @@ import turtle
 from freegames import square, vector
 import time
 
+#Jimena Gallegos
 #High score incial
 max_len = 1
 
@@ -19,6 +20,7 @@ def main():
     global time_left
     global max_len
 
+    #Jimena Gallegos
     #Objeto turtle con el score actual
     scoreboard = turtle.Turtle()
     scoreboard.hideturtle()
@@ -27,6 +29,7 @@ def main():
     scoreboard.color("white")
     scoreboard.write("Score: 1", move=False, align='center', font=('Times New Roman', 9, 'bold'))
 
+    #Jimena Gallegos
     #Objeto turtle con el score maximo
     max_scoreboard = turtle.Turtle()
     max_scoreboard.hideturtle()
@@ -35,6 +38,7 @@ def main():
     max_scoreboard.color("white")
     max_scoreboard.write(f"Max score: {max_len}", move=False, align='center', font=('Times New Roman', 9, 'bold'))
 
+    #Jordan Barba
     #Objeto turtle con el cronometro
     timer = turtle.Turtle()
     timer.hideturtle()
@@ -71,6 +75,7 @@ def main():
         head = snake[-1].copy()
         head.move(aim)
 
+        #Jordan Barba
         #Tiempo consumido desde la ultima vez que crecio la cabeza
         time_taken = round(time.time() - start_time)
 
@@ -85,12 +90,14 @@ def main():
         if not inside(head) or head in snake or time_left <= 0:
             square(head.x, head.y, 9, 'red')
             update()
-
+            
+            #Pablo Martinez
             #Aviso de perdiste en el centro de la pantalla
             penup()
             setposition(0,50)
             write('PERDISTE :(' , move=False ,align='center',font=('Times New Roman',18,'bold'))
 
+            #Jimena Gallegos
             #Limpiar ambos scoreboards, para posteriormente actualizarlos
             max_scoreboard.clear()
             scoreboard.clear()
@@ -100,20 +107,24 @@ def main():
                 max_scoreboard.write(f"Max score: {len(snake)}", move=False, align='center', font=('Times New Roman', 9, 'bold'))
                 max_len = len(snake)
 
+            #Pablo Martinez
             #Volver a jugar
             setposition(0,0)
             color('white')
             write('Click to play', move=False, align='center', font=('Times New Roman', 18, 'bold'))
 
+            #Jimena Gallegos
             #Mostrar score
             setposition(0,-25)
             write(f'Score: {len(snake)}', move=False, align='center', font=('Times New Roman', 18, 'bold'))
 
+            #Jordan Barba
             #Reiniciar temporizador
             time_taken = 0
             timer.clear()
             timer.write(f"Time left: {time_left}", move=False, align='center', font=('Times New Roman', 9, 'bold'))
 
+            #Pablo Martinez
             #Terminar partida al hacer click
             exitonclick()
 
@@ -122,6 +133,7 @@ def main():
 
         #Detectar cuando la serpiente este en la posicion de la comida
         if head == food:
+            #Jordan Barba
             #Variables de tiempo
             start_time = time.time()
             time_taken = 0
@@ -129,6 +141,7 @@ def main():
             timer.clear()
             timer.write(f"Time left: {time_left}", move=False, align='center', font=('Times New Roman', 9, 'bold'))
 
+            #Jimena Gallegos
             #Actualizar score
             scoreboard.clear()
             scoreboard.write(f"Score: {len(snake)}", move=False, align='center', font=('Times New Roman', 9, 'bold'))
@@ -150,6 +163,7 @@ def main():
         update()
         ontimer(move, 100)
 
+    #Pablo Fong
     #Objeto turtle de pantalla
     window = turtle.Screen()
     window.title("Snake Game")
@@ -157,6 +171,7 @@ def main():
     window.setup(420, 420, 370, 0)
     window.tracer(0)
 
+    #Pablo Fong
     #Especifiaciones de turtle
     hideturtle()
     tracer(False)
@@ -168,6 +183,7 @@ def main():
     move()
     done()
 
+#Pablo Martinez
 #Continuar hasta que el usuario deje de jugar
 while True:
     #Variables iniciales de tiempo
