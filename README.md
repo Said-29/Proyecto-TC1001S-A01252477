@@ -22,5 +22,6 @@ A01252477
 
 * Actividad 5 - Juego de memoria
 
-* Link video presentacion final: 
+* Videojuego - Juego clasico de la serpiente con temporizador para comer, score, high score y loop. Este proyecto fue realizado utilizando las librerias turtle, freegames, y time. Hecho como evidencia final del curso de Herramientas Computacionales de la avenida de Ingenieria en Tecnologias Computacionales.
 
+* Link video presentacion final: https://youtu.be/mBYBf8zhT0o
